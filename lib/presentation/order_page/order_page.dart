@@ -85,8 +85,8 @@ class OrderPageState extends State<OrderPage>
                           padding: EdgeInsets.only(left: 30.h),
                           child: Row(
                             children: [
-                              _buildEditAddressButton(context),
-                              _buildAddNoteButton(context),
+                              _buildEditAddress(context),
+                              _buildAddNote(context),
                             ],
                           ),
                         ),
@@ -97,13 +97,13 @@ class OrderPageState extends State<OrderPage>
                         endIndent: 30.h,
                       ),
                       SizedBox(height: 19.v),
-                      _buildFrameRow(context),
+                      _buildFrame(context),
                       SizedBox(height: 20.v),
                       Divider(
                         color: appTheme.gray10001,
                       ),
                       SizedBox(height: 19.v),
-                      _buildDiscountAppliedRow(context),
+                      _buildDiscountIsApplied1(context),
                       SizedBox(height: 20.v),
                       Align(
                         alignment: Alignment.centerLeft,
@@ -125,7 +125,7 @@ class OrderPageState extends State<OrderPage>
                         ),
                       ),
                       SizedBox(height: 16.v),
-                      _buildDeliveryFeeRow(context),
+                      _buildDeliveryFee(context),
                       SizedBox(height: 14.v),
                       Divider(
                         indent: 30.h,
@@ -140,7 +140,7 @@ class OrderPageState extends State<OrderPage>
                           price: "lbl_5_53".tr,
                         ),
                       ),
-                      _buildCashColumn(context),
+                      _buildCash1(context),
                     ],
                   ),
                 ],
@@ -153,7 +153,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildEditAddressButton(BuildContext context) {
+  Widget _buildEditAddress(BuildContext context) {
     return CustomOutlinedButton(
       width: 120.h,
       text: "lbl_edit_address".tr,
@@ -169,7 +169,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildAddNoteButton(BuildContext context) {
+  Widget _buildAddNote(BuildContext context) {
     return CustomOutlinedButton(
       width: 101.h,
       text: "lbl_add_note".tr,
@@ -186,7 +186,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildFrameRow(BuildContext context) {
+  Widget _buildFrame(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30.h),
       child: Row(
@@ -285,7 +285,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildDiscountAppliedRow(BuildContext context) {
+  Widget _buildDiscountIsApplied1(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 29.h),
       padding: EdgeInsets.all(15.h),
@@ -307,7 +307,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildDeliveryFeeRow(BuildContext context) {
+  Widget _buildDeliveryFee(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30.h),
       child: Row(
@@ -337,7 +337,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildCashButton(BuildContext context) {
+  Widget _buildCash(BuildContext context) {
     return CustomElevatedButton(
       height: 24.v,
       width: 51.h,
@@ -348,7 +348,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildOrderButton(BuildContext context) {
+  Widget _buildOrder(BuildContext context) {
     return CustomElevatedButton(
       text: "lbl_order".tr,
       buttonStyle: CustomButtonStyles.fillPrimary,
@@ -356,7 +356,7 @@ class OrderPageState extends State<OrderPage>
   }
 
   /// Section Widget
-  Widget _buildCashColumn(BuildContext context) {
+  Widget _buildCash1(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
         horizontal: 29.h,
@@ -386,7 +386,7 @@ class OrderPageState extends State<OrderPage>
                   ),
                   child: Row(
                     children: [
-                      _buildCashButton(context),
+                      _buildCash(context),
                       Padding(
                         padding: EdgeInsets.only(
                           left: 10.h,
@@ -411,7 +411,7 @@ class OrderPageState extends State<OrderPage>
             ),
           ),
           SizedBox(height: 16.v),
-          _buildOrderButton(context),
+          _buildOrder(context),
           SizedBox(height: 27.v),
         ],
       ),

@@ -31,13 +31,13 @@ class OnboardingScreen extends StatelessWidget {
                         height: 492.v,
                         width: 375.h,
                         alignment: Alignment.topCenter),
-                    _buildOnboardingContent(context)
+                    _buildTwo(context)
                   ]))));
     });
   }
 
   /// Section Widget
-  Widget _buildOnboardingContent(BuildContext context) {
+  Widget _buildTwo(BuildContext context) {
     return Align(
         alignment: Alignment.bottomCenter,
         child: Container(
